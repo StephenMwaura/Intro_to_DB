@@ -8,7 +8,7 @@ mydb = mysql.connector.connect(
 )
 mycursor = mydb.cursor()
 try:
- query = "Create database if not exists alx_book_store"
+ query = "CREATE DATABASE IF NOT EXISTS alx_book_store"
  mycursor.execute(query)
  print("Database alx_book_store created successfully!")
 except ConnectionError:
