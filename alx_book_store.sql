@@ -25,7 +25,7 @@ CREATE TABLE Orders(
     order_id INT AUTO_INCREMENT (PRIMARY KEY),
     customer_id (FOREIGN KEY),
     order_date DATE,
-    FOREIGN KEY (customers_id) REFERENCES Customers(customers_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 CREATE TABLE Order_Details(
